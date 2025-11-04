@@ -1,0 +1,11 @@
+.photo{
+    width: 250px;
+    background-color: aqua;
+    height: 500px;
+    margin-bottom: 500px;
+    text-align: center;
+    align-content:center;
+}
+.photo img{
+    width: 50%;
+}

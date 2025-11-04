@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="stylesheet" href="styles/large.css" />
-    <!-- <link rel="stylesheet" href="styles/small.css" /> -->
-    <script src="scripts/navigation.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css" />
+    <script src="scripts/first-project.js" defer></script>
+
     <title>Medina MBEDI|WDD231 first assignment</title>
   </head>
   <body>
@@ -24,9 +25,9 @@
       </div>
       <nav>
         <ul class="navigation">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Chamber Project</li></a>
-          <a href="#"><li>Final Project</li></a>
+          <li><a>Home</a></li>
+          <li><a>Chamber Project</a></li>
+          <li><a>Final Project</a></li>
         </ul>
       </nav>
     </header>
@@ -61,22 +62,38 @@
         </div>
         <div class="photo">
           <h2>Student photo</h2>
-          <img src="images/profile.webp" alt="my photo" />
+          <div class="go"><img src="images/profile.webp" alt="my photo" /></div>
         </div>
       </section>
 
-      <div>
+      <div id="lala">
         <h2>web Certificate Courses</h2>
-        <div class="section2">
-          <p>All</p>
-          <p>CSE</p>
-          <p>WDD</p>
-          <p>WDD 130</p>
-          <p>WDD 131</p>
-          <p>WDD 231</p>
+        <div id="section2">
+          <a id="click1">All courses</a>
+          <a id="click2">CSE</a>
+          <a id="click3">WDD</a>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <span class="foot">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="images/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://github.com/dashboard" target="_blank"
+          ><img src="images/github.svg" alt="github"
+        /></a>
+        <a href="https://x.com/" target="_blank"
+          ><img src="images/twitter-x.svg" alt="x"
+        /></a>
+        <a href="https://www.linkedin.com/in/m%C3%A9dinamb/" target="_blank"
+          ><img src="images/linkedin.svg" alt="linkedin"
+        /></a>
+      </span>
+      <div class="last">
+        <p>&copy; 2025 &#x2022; Medina MBEDI &#x2022; Brazzaville, Congo</p>
+        <p class="current-time"></p>
+      </div>
+    </footer>
   </body>
 </html>
