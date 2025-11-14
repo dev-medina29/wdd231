@@ -3,9 +3,10 @@ const url =
 const cards = document.querySelector("#cards");
 const displayProphets = (prophets) => {
   prophets.forEach((prophet) => {
-    const card = document.createElement("section");
+    const card = document.createElement("div");
     const fullName = document.createElement("h2");
     const portrait = document.createElement("img");
+    card.setAttribute("class", "manager");
     fullName.innerHTML = `${prophet.name} ${prophet.lastname}`;
     portrait.setAttribute("Alt", `${prophet.name} ${prophet.lastname}`);
     portrait.setAttribute("src", prophet.imageurl);

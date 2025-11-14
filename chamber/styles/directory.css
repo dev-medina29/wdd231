@@ -1,110 +1,361 @@
-/* ################### Header  ############################### */
-*{
-    font-family: Georgia;
-    
+  /* ################### Header  ############################### */
+* {
+  font-family: Georgia;
 }
-.navigation li{
-    list-style-type: none;
-    cursor: pointer;
+.navigation li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.hamburger{
+  display:none;
+}
+.Simage{
+  padding-left: 10px;
+}
+nav {
+  display: grid;
+  grid-template-columns: 30px 1fr 2fr 30px 30px;
+  color: white;
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: end;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* height: 31.47px; */
 }
 header{
-    display:grid;
-    grid-template-columns: 30px 1fr 2fr;
-    background-color: rgb(255, 255, 118);
-    font-size: larger;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: end;
-    margin: 0;
-    padding-top:15px;
-    padding-bottom: 15px;
-    /* height: 31.47px; */
+  background-color: rgb(16, 145, 231);
 }
-header img{
-    width: 100%;
-    height: auto;
-    /* border: 1px solid black; */
+header img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
 }
 
-.navigation ul{
-    display: flex;
-    gap: 10px;
-    align-items: end;
-    padding: 0;
-    margin: 0;
+.navigation ul {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  padding: 0;
+  margin: 0;
 }
-.navigation{
-    display:flex;
-    justify-self:end;
-    gap: 10px;
-    /* border: 1px solid black; */
+header a:hover{
+  color:rgb(0, 0, 0);
+  background-color: white;
 }
-.navigation li img{
-    width:29.99px;
-    height:29.99px;
-    display: block;
+
+.navigation {
+  display: flex;
+  justify-self: end;
+  gap: 10px;
+  /* border: 1px solid black; */
 }
+.navigation li img {
+  width: 29.99px;
+  height: 29.99px;
+  display: block;
+}
+.navigation2{
+  text-align: center;
+  color: white;
+  display: none;
+}
+.navigation2 li{
+  list-style: none;
+  padding: 10px;
+}
+
 
 
 /* ############################################################## */
 .menuT {
-	margin: 1rem auto;
-	padding: 0.5rem;
-	background-color: #a7a6a3;
-	text-align: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  background-color: #a7a6a3;
+  text-align: center;
 }
-.menuT button{
-    padding:10px;
-    margin-right: 10px;
+.menuT button {
+  padding: 10px;
+  margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.manager img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 4px 4px 10px rgba(27, 27, 27, 0.4);
+}
+.manager {
+  background-color: #a7a6a3;
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: -2px 2px 3px rgba(8, 8, 8, 0.8);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list{
+  display:flex;
+  justify-content: center;
+}
+.list .manager> img{
+    display: none;
+}
+.list .manager{
+  display:flex;
+  gap:20px;
+  background-color:#a7a6a3;
+  flex-shrink: inherit;
+  width: 800px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  padding-top:0;
+  padding-bottom: 0;
+} 
+.list .manager > h2{ 
+  margin: 0;
+}
+.list .manager > p{
+  padding: 0;
+  margin: 0;
+  width: 500px;
+} 
+.cards.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* #######################  Grid or flex ################################# */
 
 /* ################ footer #################### */
-footer{
-    margin-top: 20px;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    justify-content:space-around;
-    background-color: rgb(255, 255, 118);
-    align-items: flex-start;
+footer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-around;
+  color:white;
+  background-color: rgb(16, 145, 231);
+  align-items: flex-start;
 }
-.foot{
+.foot {
+  margin-top: 15px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px 22px 22px 22px;
+  gap: 15px;
+  justify-content: center;
+}
+.foot a img {
+  width: 100%;
+  border: 2px rgb(68, 67, 67) dotted;
+  padding: 5px;
+  margin: 10px;
+}
+.last {
+  padding: 5px;
+}
+
+@media screen and (max-width:320px){
+  *{
+    font-family: Georgia;
+  }
+  header,footer{
+    width:319px;
+  }
+  main{
+    width: auto;
+  }
+  /* ################# HAMBURGER ################### */
+  .hamburger::after{
+      content:"\2630";
+      font-size: 18px;
+      font-weight:bolder;
+      cursor: pointer;
+  }
+  .hamburger{
+    display: block;  
+    background: none;
+    border:none;
+    width: 30px;
+    padding:0;
+  }
+  .navigation.open ul{
+    display: block;
+  }
+  #ham.open::after{
+    content: "\2715";
+    color: aliceblue;
+    font-size: 18px;
+    font-weight:bolder;
+    cursor: pointer;
+}
+.navigation.open{
+    display: block;
+    background-color: rgb(68, 67, 67);
+    padding:0;
+    margin-top:4px;
+}
+.navigation.open li{
+    list-style: none;
+    text-align: center;
+    padding: 9px;
+    font-size: larger;
+}
+.navigation.open li:hover{
+    background-color: rgb(136, 133, 133);
+}
+  
+
+  /* ################### Header  ############################### */
+  .navigation ul{
+      display: none;
+      padding-left: 0;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  nav img{
+    width: 30px;
+    height: auto;
+  }
+  nav span{
+    font-size: smaller;
+  }
+  .navigation2.open{
+    display: inline;
+    margin:0;
+    padding:0;
+  }
+  .navigation2.open li:hover{
+    background-color: black;
+  }
+  .navigation2.open a:hover{
+    background-color: black;
+    color:rgb(255, 255, 255);
+
+  }
+  .navigation2.open ul{
+    padding: 0;
+  }
+  /* ################ footer #################### */
+  footer {
+    margin-top: 20px;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    background-color: rgb(16, 145, 231);
+    align-items: center;
+    font-size: smaller;
+  }
+  .foot {
     margin-top: 15px;
     position: relative;
     display: grid;
-    grid-template-columns: 22px 22px 22px 22px ;
+    grid-template-columns: 22px 22px 22px 22px;
     gap: 15px;
-    justify-content: center; 
-}
-.foot a img{
+    text-align: center;
+  }
+  .foot a img {
     width: 100%;
-    border: 2px  rgb(68, 67, 67) dotted;
+    border: 2px rgb(68, 67, 67) dotted;
     padding: 5px;
-    
-}
-.last{
+    margin: 10px;
+  }
+  .last {
     padding: 5px;
+    text-align: center;
+  }
+  .before-last{
+    text-align: center;
+  }
+  /* ################### Body ###################### */
+  .list{
+  display:flex;
+  justify-content: center;
 }
+.list .manager> img{
+    display: none;
+}
+.list .manager{
+  display:flex;
+  gap:10px;
+  background-color:#a7a6a3;
+  flex-shrink: inherit;
+  width: 300px;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  padding-top:0;
+  padding-bottom: 0;
+} 
+.list .manager > h2{ 
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.list .manager > p{
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  font-size:12px;
+  text-align: left;
+} 
+.list .manager a{
+  font-size:10px;
+}
+.cards.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:baseline;
+}
+.grid .manager img{
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+.grid .manager{
+  height: auto;
+  width: 130px;
+  font-size: smaller;
+}
+.grid .manager p{
+  padding:5px;
+}
+.grid .manager h2{
+  font-size: small;
+  padding:5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

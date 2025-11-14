@@ -23,13 +23,14 @@
     />
     <link rel="icon" href="new-favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <!-- <link rel="stylesheet" href="styles/small.css" /> -->
     <link rel="stylesheet" href="styles/directory.css" />
     <script src="scripts/directory.js" defer></script>
     <title>Directory page</title>
   </head>
   <body>
     <header>
-      <img src="images/house-door.svg" alt="logo" width="512" height="512" />
+      <nav><img src="images/house-door.svg" alt="logo" width="512" height="512" />
       <span>Medina Chamber of Commerce </span>
       <div class="navigation">
         <ul>
@@ -37,19 +38,24 @@
           <li><a>Directory</a></li>
           <li><a>Join</a></li>
           <li><a>Discover</a></li>
-          <li>
-            <img src="images/contrast-svgrepo-com.svg" alt="image2" />
-          </li>
         </ul>
-        <button class="hamburger" id="ham"></button>
       </div>
+      <img class="Simage" src="images/contrast-svgrepo-com.svg" alt="image2" />
+      <button class="hamburger" id="ham"></button> </nav>
+      <div class="navigation2">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Directory</a></li>
+          <li><a>Join</a></li>
+          <li><a>Discover</a></li>
+        </ul>
     </header>
     <main>
       <div class="menuT">
         <button id="grid">Grid</button>
         <button id="list">List</button>
       </div>
-      <div id="cards"></div>
+      <div class="cards"></div>
     </main>
     <footer>
       <div class="before-last">

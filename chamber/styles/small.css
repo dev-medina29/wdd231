@@ -1,4 +1,4 @@
-@media screen and (max-width:320px){
+@media screen and (max-width:500px){
      *{
     font-family: Georgia;
     
@@ -15,8 +15,7 @@
     border:none;
 }
 #ham.open::after{
-    content: "\2715";
-    color:azure;
+    content: "\274c";
     font-size: 18px;
     font-weight:bolder;
     cursor: pointer;
@@ -50,37 +49,6 @@
     width: 100%;
     height: auto;
 }
-/* nav ul{
-    list-style-type: none;
-    padding-left: 0;
-    margin:0;
-}
-
-.navigation{
-    display: flex;
-    gap:15px;
-    justify-content: start;
-}
-nav{
-    background-color: rgb(68, 67, 67);
-    padding:0;
-    margin-top:4px;
-}
-nav li{
-    text-align: center; 
-    padding:15px;
-    margin:0;
-}
-nav a{
-    text-decoration: none;
-    color:white;
-    cursor: pointer;
-}
-nav a:hover{
-    background-color: rgb(252, 252, 252);
-    color:black;
-} */
-
 .navigation{
     display: none;
 }
