@@ -294,7 +294,7 @@ footer {
 .list .manager> img{
     display: none;
 }
-.list .manager{
+.cards.list .manager{
   display:flex;
   gap:10px;
   background-color:#a7a6a3;
@@ -325,9 +325,9 @@ footer {
 .cards.grid{
   display: flex;
   flex-wrap: wrap;
-  justify-content:baseline;
+  
 }
-.grid .manager img{
+/* .grid .manager img{
   width: 100px;
   height: auto;
   object-fit: cover;
@@ -343,14 +343,36 @@ footer {
 .grid .manager h2{
   font-size: small;
   padding:5px;
-
+} */
+.cards .manager img{
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+.cards.grid .manager{
+  height: auto;
+  width: 130px;
+  font-size: smaller;
+}
+.cards .manager p{
+  padding:5px;
+}
+.cards .manager h2{
+  font-size: small;
+  padding:5px;
 }
 
-
-
-
-
-
+.cards .manager{
+  height: auto;
+  width: 130px;
+  font-size: smaller;
+}
+/* 
+.cards.list .manager{
+  height: auto;
+  width: 200px;
+  font-size: smaller;
+} */
 
 
 
