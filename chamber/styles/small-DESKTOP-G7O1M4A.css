@@ -1,0 +1,197 @@
+@media screen and (max-width: 320px) {
+  * {
+    font-family: Georgia;
+  }
+  /* ################# HAMBURGER ################### */
+  .hamburger::after {
+    content: "\2630";
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .hamburger {
+    background: none;
+    border: none;
+  }
+  #ham.open::after {
+    content: "\274c";
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .navigation.open {
+    display: block;
+    background-color: rgb(68, 67, 67);
+    padding: 0;
+    margin-top: 4px;
+  }
+  .navigation.open li {
+    list-style: none;
+    text-align: center;
+    padding: 9px;
+    font-size: larger;
+  }
+  .navigation.open li:hover {
+    background-color: rgb(136, 133, 133);
+  }
+
+  /* ################### Header  ############################### */
+  .first-part {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 5px 2px 5px;
+    align-items: end;
+    border-bottom: solid 1px black;
+    gap: 8px;
+  }
+  .first-part img {
+    width: 100%;
+    height: auto;
+  }
+  /* nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin:0;
+}
+
+.navigation{
+    display: flex;
+    gap:15px;
+    justify-content: start;
+}
+nav{
+    background-color: rgb(68, 67, 67);
+    padding:0;
+    margin-top:4px;
+}
+nav li{
+    text-align: center; 
+    padding:15px;
+    margin:0;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+nav a:hover{
+    background-color: rgb(252, 252, 252);
+    color:black;
+} */
+
+  .navigation {
+    display: none;
+  }
+
+  /* ################ footer #################### */
+
+  .foot {
+    margin-top: 15px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 22px 22px 22px 22px;
+    justify-content: center;
+    gap: 15px;
+  }
+  .foot a img {
+    width: 100%;
+    border: 2px rgb(68, 67, 67) dotted;
+    padding: 5px;
+  }
+  footer p {
+    text-align: center;
+  }
+  .last {
+    background-color: rgb(182, 179, 179);
+    padding: 5px;
+    align-content: center;
+  }
+  /* ################### Final Section  ############################ */
+  #section2 a {
+    background-color: rgb(182, 179, 179);
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  #section2 {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  .unique {
+    text-align: center;
+  }
+  /* ################# crazyness ###################### */
+
+  #final-section a {
+    display: block;
+    background-color: rgb(182, 179, 179);
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  #lala p {
+    text-align: center;
+    width: 400px;
+  }
+  #final-section #completed {
+    background-color: rgba(182, 179, 179, 0.3);
+  }
+
+  main h2 {
+    width: 400px;
+    margin: 0;
+    background-color: rgb(68, 67, 67);
+    color: white;
+    text-align: center;
+  }
+
+  .me,
+  .photo {
+    width: 400px;
+    height: auto;
+    position: relative;
+    /* left: 8%; */
+  }
+  .me p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .photo {
+    position: relative;
+  }
+  .go {
+    /* position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; */
+    margin: 0;
+    text-align: center;
+    align-content: center;
+  }
+  .main .photo div {
+    border: none;
+  }
+
+  .main div {
+    background-color: rgb(182, 179, 179);
+    border: solid 2px black;
+    margin: 5px;
+  }
+
+  .photo img {
+    width: 40%;
+    height: auto;
+    object-position: top;
+    object-fit: cover;
+    box-shadow: -2px -2px 1.5px rgba(8, 8, 8, 0.5);
+  }
+}
