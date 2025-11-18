@@ -1,0 +1,55 @@
+<header class="hero">
+  <!-- Background image applied via CSS -->
+  <div class="hero-content">
+    <h1>Welcome to Our Chamber of Commerce</h1>
+    <p>
+      Supporting local businesses, fostering community growth, and creating
+      opportunities for all.
+    </p>
+    <a href="join.html" class="cta-button">Join the Chamber</a>
+  </div>
+</header>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("images/chamber-hero.jpg") center/cover no-repeat;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #f9c74f;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #f9844a;
+  }
+</style>
