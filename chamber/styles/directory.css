@@ -2,6 +2,9 @@
 * {
   font-family: Georgia;
 }
+p {
+  color: black;
+}
 .navigation li {
   list-style-type: none;
   cursor: pointer;
