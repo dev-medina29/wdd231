@@ -6,7 +6,7 @@
       "phone": "+242 06 123 4567",
       "website": "https://www.ecotechsolutions.tech/",
       "image": "https://static.wixstatic.com/media/5e78a0_ddb7416fb4154ec8899244a3aa66137b~mv2.png/v1/fill/w_403,h_314,al_c,lg_1,q_85,enc_avif,quality_auto/Dad%20Website%20Thumb%20Front%20Page.png",
-      "membershipLevel": 3,
+      "membershipLevel": "gold",
       "description": "Leading provider of sustainable energy solutions in Central Africa."
     },
     {
@@ -15,7 +15,7 @@
       "phone": "+242 06 987 6543",
       "website": "https://savannahcoffee.com/",
       "image": "https://www.savannah.com/wp-content/uploads/Savannah-Coffee-Roasters-Outdoor.png",
-      "membershipLevel": 2,
+      "membershipLevel": "silver",
       "description": "Artisan coffee roasters sourcing beans from Congolese highlands."
     },
     {
@@ -24,7 +24,7 @@
       "phone": "+242 06 555 1212",
       "website": "https://icazi.com/contruction-brazzaville-congo",
       "image": "https://icazi.com/wp-content/uploads/2025/06/LOGO-ICAZI-V3.png",
-      "membershipLevel": 1,
+      "membershipLevel": "member",
       "description": "Residential and commercial construction experts with 20+ years of experience."
     },
     {
@@ -32,8 +32,8 @@
       "address": "12 Silicon Avenue, Brazzaville",
       "phone": "+242 06 333 7890",
       "website": "https://kongotech-org.com/kongotech/",
-      "image": "https://kongotech-org.com/wp-content/uploads/2025/11/Kongotech.webp",
-      "membershipLevel": 3,
+      "image": "https://iemlabs.com/blogs/wp-content/uploads/sites/4/2024/02/Kongo-Tech.webp",
+      "membershipLevel": "gold",
       "description": "AI and software development firm focused on local tech talent."
     },
     {
@@ -42,7 +42,7 @@
       "phone": "+242 06 222 3344",
       "website": "https://www.riverbank.realestate/",
       "image": "https://u.realgeeks.media/lindaone/area-pictures/riverbank_crossroads.jpg",
-      "membershipLevel": 2,
+      "membershipLevel": "silver",
       "description": "Real estate agency specializing in waterfront properties and commercial leases."
     },
     {
@@ -51,7 +51,7 @@
       "phone": "+242 06 444 5566",
       "website": "https://congotimes.com/2025/08/13/congos-woodcraft-showcase-attracts-global-eyes/",
       "image": "https://www.socobois.fr/media/wysiwyg/Stock-Socobois-1-min_1.jpg",
-      "membershipLevel": 1,
+      "membershipLevel": "member",
       "description": "Handcrafted furniture made from sustainably sourced Congolese wood."
     },
     {
@@ -60,7 +60,7 @@
       "phone": "+242 06 777 8888",
       "website": "https://www.aglgroup.com/en/#:~:text=AGL%20%28Africa%20Global%20Logistics%29%20is%20the%20trusted%20logistics,innovative%20services%20to%20its%20African%20and%20international%20customers.",
       "image": "https://www.aglgroup.com/app/uploads/2023/02/agl_bleu.svg",
-      "membershipLevel": 2,
+      "membershipLevel": "silver",
       "description": "International shipping and logistics company with regional expertise."
     }
   ]
