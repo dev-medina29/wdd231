@@ -1,8 +1,6 @@
 const url =
   "https://api.openweathermap.org/data/2.5/forecast?lat=-4.274567498129054&lon=15.312341413005706&appid=04f1b04f494911cc997005d70334e49c&units=imperial";
 
-const spot = document.querySelector(".spolight");
-
 async function getData() {
   const myresponse = await fetch(url);
   if (myresponse.ok) {
@@ -18,6 +16,7 @@ async function getData() {
       const dayToD = document.createElement("p");
       dayToD.innerHTML = day;
       const intro = document.createElement("p");
+      intro.setAttribute("class", "pS");
       intro.innerHTML = "Brazzaville weather";
       const temp = document.createElement("p");
       temp.innerHTML = `${mydata.list[j].main.temp}&deg F`;
@@ -36,7 +35,7 @@ async function getData() {
       card.appendChild(image);
       card.appendChild(descr);
       weather.appendChild(card);
-      j += 9;
+      j += 7;
     }
   } else {
     throw Error(await response.text());
@@ -51,27 +50,35 @@ const displayMembers = (members) => {
   const event = document.querySelector(".spolight");
   const memberToD = [];
   members.forEach((member) => {
-    if (member.membershipLevel == silver || member.membershipLevel == gold) {
+    if (
+      member.membershipLevel == "silver" ||
+      member.membershipLevel == "gold"
+    ) {
       memberToD.push(member);
     }
   });
   console.log(memberToD);
   const toDisplay = [];
   for (let t = 0; t < 2; t++) {
-    const randomChoice =
-      memberToD[Math.floor(Math.random() * memberToD.length)];
-    while (randomChoice in toDisplay) {
-      randomChoice = memberToD[Math.floor(Math.random() * memberToD.length)];
+    const randonInd = Math.floor(Math.random() * memberToD.length);
+    let randomChoice = memberToD[randonInd];
+    console.log(randonInd);
+    while (toDisplay.includes(randomChoice)) {
+      const randonInd2 = Math.floor(Math.random() * memberToD.length);
+      console.log(randonInd2);
+      randomChoice = memberToD[randonInd2];
     }
     toDisplay.push(randomChoice);
     const card = document.createElement("section");
     card.setAttribute("class", "manager");
     const fullName = document.createElement("h2");
     const portrait = document.createElement("img");
-    const detail = document.createElement("p");
+    const detail = document.createElement("a");
     const address = document.createElement("p");
     const membership = document.createElement("p");
     const phone = document.createElement("p");
+    detail.setAttribute("href", randomChoice.website);
+    detail.setAttribute("target", "_blank");
     fullName.innerHTML = `${randomChoice.name}`;
     portrait.setAttribute("Alt", randomChoice.name);
     portrait.setAttribute("src", randomChoice.image);
@@ -91,6 +98,7 @@ const displayMembers = (members) => {
     card.appendChild(membership);
     event.appendChild(card);
   }
+  console.log(toDisplay);
 };
 async function getMembersData() {
   const response = await fetch(MyData);
@@ -110,3 +118,11 @@ const day = date.getDate();
 const current_year = document.querySelector(".current-time");
 current_year.textContent = `Last modification ${month}/${day}/${year} at ${hours}:${minutes}:${seconds}`;
 // ###############################################################
+
+// ################# HAMBURGER ###################
+let menu = document.querySelector("#ham");
+let navigation = document.querySelector(".navigation2");
+menu.addEventListener("click", () => {
+  menu.classList.toggle("open");
+  navigation.classList.toggle("open");
+});

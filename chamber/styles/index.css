@@ -186,110 +186,9 @@ footer {
   padding: 5px;
 }
 
-/* ################################################## */
-.tr {
-  background-color: #efede7;
-  margin-bottom: 0;
-  text-align: center;
-}
-.weather {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 19px;
-  background-color: #efede7;
-  margin: 10px;
-  justify-content: center;
-}
-.weatherManager {
-  text-align: center;
-  border: black 0.5px solid;
-  /* padding: 10px; */
-  margin: 10px;
-  padding: 0;
-  box-shadow: 2px 2px 1px rgba(51, 129, 248, 0.4);
-}
-.weatherManager .pS {
-  margin-top: 0;
-  /* margin-left: 10px;
-  margin-right: 10px; */
-  width: 189.55px;
-  background-color: rgb(16, 145, 231);
-}
-#events {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 19px;
-  background-color: #efede7;
-  margin: 10px;
-  align-items: center;
-  width: auto;
-  height: auto;
-}
-#events h2 {
-  justify-content: flex-end;
-}
-.event {
-  text-align: center;
-  align-items: center;
-  padding-bottom: 15px;
-  background-color: white;
-  margin: 10px;
-  /* padding: 0; */
-  box-shadow: 0 -2.6px 1px rgba(51, 129, 248, 1);
-  width: 960px;
-}
-.spolight {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 19px;
-  background-color: #efede7;
-  margin: 10px;
-  width: auto;
-  height: auto;
-}
-.spolight .manager {
-  display: inline-block;
-  width: 350px;
-  height: auto;
-  overflow: hidden;
-  background-color: white;
-  border-radius: 30px;
-  border: #5eadf3 solid 1px;
-  box-shadow: -2.6px 0 1px rgba(51, 129, 248, 1);
-}
-.spolight .manager a {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  /* border: #5eadf3 solid 2px; */
-}
-.dr {
-  text-align: center;
-  background-color: #efede7;
-  margin-bottom: 0;
-  padding-top: 15px;
-}
-
-/* #################################################################### */
 @media screen and (max-width: 320px) {
   * {
     font-family: Georgia;
-  }
-
-  .tr {
-    padding-left: 10px;
-    width: auto;
-    height: auto;
-  }
-  #events {
-    width: auto;
-    height: auto;
-  }
-  .event {
-    width: auto;
-    height: auto;
   }
   header,
   footer {
@@ -444,7 +343,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-
+  /* .grid .manager img{
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+.grid .manager{
+  height: auto;
+  width: 130px;
+  font-size: smaller;
+}
+.grid .manager p{
+  padding:5px;
+}
+.grid .manager h2{
+  font-size: small;
+  padding:5px;
+} */
   .cards .manager img {
     width: 100px;
     height: auto;
@@ -468,4 +383,10 @@ footer {
     width: 130px;
     font-size: smaller;
   }
+  /* 
+.cards.list .manager{
+  height: auto;
+  width: 200px;
+  font-size: smaller;
+} */
 }
