@@ -367,8 +367,8 @@ footer {
     background-color: rgb(225, 247, 31);
   }
   .navigation2.open a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
+    background-color:  rgb(0, 0, 0);
   }
   .navigation2.open ul {
     padding: 0;
