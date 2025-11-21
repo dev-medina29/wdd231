@@ -37,9 +37,14 @@ header img {
 /* ############## hero image ############## */
 
 .hero-content {
+  position: relative;
+  display: inline-block;
   text-align: center;
   margin-top: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  width: 100%;
+  height: auto;
+  margin-top: 0;
 }
 .hero-content a {
   background-color: #fffb00;
@@ -87,6 +92,41 @@ header a:hover {
   padding: 10px;
 }
 
+.hero-content img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-content h1{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  background-color: #fffb00;
+  width: 100%;
+  height: auto;
+}
+.hero-content p {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: larger;
+}
+.hero-content a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
 /* ############################################################## */
 .menuT {
   margin: 1rem auto;
@@ -264,6 +304,72 @@ footer {
   .navigation2.open ul {
     padding: 0;
   }
+  /* #################### hero image ######################## */
+  .hero-content {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 50px;
+  /* padding-bottom: 50px; */
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* border: solid 1px black; */
+}
+  .hero-content h1{
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  background-color: #fffb00;
+  width: 100%;
+  height: auto;
+  padding-top: 7px;
+  box-shadow: -2px 2px 4px rgba(39, 40, 40, 0.7);
+  /* border: solid 1px black; */
+  }
+  .hero-content p {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      color: rgb(218, 221, 223);
+      font-size: 10px;
+      /* border: solid 1px black; */
+      width: 100%;
+      background-color: rgba(0, 0, 0,0.4);
+      letter-spacing: 1px;
+      
+
+    }
+  .hero-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    /* border: solid 1px black; */
+    }
+  .hero-content a {
+    position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      font-size: 13px;
+      box-shadow: -2px 2px 4px rgba(39, 40, 40, 0.7);
+    }
+  .hero-content .cta-button {
+    margin: 0;
+  }
+  .hero-content a:hover {
+    background-color: white;
+  }
   /* ################ footer #################### */
   footer {
     margin-top: 20px;
@@ -339,23 +445,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-  /* .grid .manager img{
-  width: 100px;
-  height: auto;
-  object-fit: cover;
-}
-.grid .manager{
-  height: auto;
-  width: 130px;
-  font-size: smaller;
-}
-.grid .manager p{
-  padding:5px;
-}
-.grid .manager h2{
-  font-size: small;
-  padding:5px;
-} */
+ 
   .cards .manager img {
     width: 100px;
     height: auto;
@@ -379,10 +469,5 @@ footer {
     width: 130px;
     font-size: smaller;
   }
-  /* 
-.cards.list .manager{
-  height: auto;
-  width: 200px;
-  font-size: smaller;
-} */
+  
 }
