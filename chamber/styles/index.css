@@ -79,7 +79,7 @@ header a:hover {
 }
 .navigation2 {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   display: none;
 }
 .navigation2 li {
@@ -216,7 +216,7 @@ footer {
   }
   #ham.open::after {
     content: "\2715";
-    color: aliceblue;
+    color: rgb(15, 15, 15);
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
@@ -259,11 +259,7 @@ footer {
     padding: 0;
   }
   .navigation2.open li:hover {
-    background-color: black;
-  }
-  .navigation2.open a:hover {
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color:  #fffb00;
   }
   .navigation2.open ul {
     padding: 0;

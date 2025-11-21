@@ -18,7 +18,7 @@ p {
 nav {
   display: grid;
   grid-template-columns: 30px 1fr 2fr 30px 30px;
-  color: white;
+  color: rgb(12, 12, 12);
   font-size: larger;
   padding-left: 10px;
   padding-right: 10px;
@@ -82,7 +82,7 @@ header a:hover {
 }
 .navigation2 {
   text-align: center;
-  color: white;
+  color: rgb(22, 22, 22);
   display: none;
 }
 .navigation2 li {
@@ -356,6 +356,7 @@ footer {
   }
   nav span {
     font-size: smaller;
+    color: black;
   }
   .navigation2.open {
     display: inline;
@@ -363,11 +364,11 @@ footer {
     padding: 0;
   }
   .navigation2.open li:hover {
-    background-color: black;
+    background-color: rgb(225, 247, 31);
   }
   .navigation2.open a:hover {
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
   }
   .navigation2.open ul {
     padding: 0;
