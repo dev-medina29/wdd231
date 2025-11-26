@@ -7,6 +7,9 @@ const month = date.getMonth() + 1;
 const day = date.getDate();
 const current_year = document.querySelector(".current-time");
 current_year.textContent = `Last modification ${month}/${day}/${year} at ${hours}:${minutes}:${seconds}`;
+
+// Set timestamp in the hidden field
+
 // ###############################################################
 
 // ################# HAMBURGER ###################
@@ -62,3 +65,10 @@ openBut4.addEventListener("click",()=>{
 CloseButton4.addEventListener("click",()=>{
   D4.close();
 })
+
+
+const form = document.querySelector('form');
+form.addEventListener('submit', () => {
+  const now = new Date();
+  document.querySelector('#timestamp').value = now.toISOString();
+});
