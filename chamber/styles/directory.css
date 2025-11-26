@@ -1,3 +1,4 @@
+
 /* ################### Header  ############################### */
 * {
   font-family: Georgia;
@@ -281,6 +282,36 @@ footer {
     font-family: Georgia;
   }
 
+
+
+  /* ################### JOIN PAGE ####################### */
+  .flex-card{
+    display: inline;
+    justify-content: center;
+    gap:10px;
+  }
+  .form{
+    font-size:smaller;
+  }
+  .form-section h2{
+    text-align: center;
+  }
+  .form-section{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .Card{
+    /* width: 150px; */
+    font-size: small;
+    text-align: center;
+    justify-items: center;
+
+    /* margin-left: 20px; */
+  }
+ 
+
+
+  /* ################### JOIN PAGE ####################### */
   .tr {
     padding-left: 10px;
     width: auto;
@@ -320,7 +351,6 @@ footer {
   }
   #ham.open::after {
     content: "\2715";
-    color: aliceblue;
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
