@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="This is the directory page of our final projet "
-    >
-    <meta name="author" content="Medina MBEDI">
-    <meta property="og:title" content="Homepage">
-    <meta
-      property="og:description"
-      content="In this page, we will discover the compagnies of my place "
-    >
-    <meta
-      property="og:url"
-      content="https://dev-medina29.github.io/wdd231/chamber/index.html"
-    >
-    <meta
-      property="og:image"
-      content="https://dev-medina29.github.io/wdd231/chamber/new-favicon.ico"
-    >
-    <link rel="icon" href="new-favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/index.css" >
-    <script src="scripts/index.js" defer></script>
-    <title>Homepage</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="images/house-door.svg" alt="logo" width="512" height="512">
-        <span>Medina Chamber of Commerce </span>
-        <div class="navigation">
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>Directory</a></li>
-            <li><a>Join</a></li>
-            <li><a>Discover</a></li>
-          </ul>
-        </div>
-        <img
-          class="Simage"
-          src="images/contrast-svgrepo-com.svg"
-          alt="image2"
-        >
-        <button class="hamburger" id="ham"></button>
-      </nav>
-      <div class="navigation2">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the directory page of our final projet ">
+  <meta name="author" content="Medina MBEDI">
+  <meta property="og:title" content="Homepage">
+  <meta property="og:description" content="In this page, we will discover the compagnies of my place ">
+  <meta property="og:url" content="https://dev-medina29.github.io/wdd231/chamber/index.html">
+  <meta property="og:image" content="https://dev-medina29.github.io/wdd231/chamber/new-favicon.ico">
+  <link rel="icon" href="new-favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
+  <title>Homepage</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="images/house-door.svg" alt="logo" width="512" height="512">
+      <span>Medina Chamber of Commerce </span>
+      <div class="navigation">
         <ul>
-          <li><a>Home</a></li>
-          <li><a>Directory</a></li>
-          <li><a>Join</a></li>
+          <li><a href="https://dev-medina29.github.io/wdd231/chamber/index.html">Home</a></li>
+          <li><a href="https://dev-medina29.github.io/wdd231/chamber/directory.html">Directory</a></li>
+          <li><a href="https://dev-medina29.github.io/wdd231/chamber/join.html">Join</a></li>
           <li><a>Discover</a></li>
         </ul>
       </div>
-      <!-- <div class="hero-content">
+      <img class="Simage" src="images/contrast-svgrepo-com.svg" alt="image2">
+      <button class="hamburger" id="ham"></button>
+    </nav>
+    <div class="navigation2">
+      <ul>
+        <li><a href="https://dev-medina29.github.io/wdd231/chamber/index.html">Home</a></li>
+        <li><a href="https://dev-medina29.github.io/wdd231/chamber/directory.html">Directory</a></li>
+        <li><a href="https://dev-medina29.github.io/wdd231/chamber/join.html">Join</a></li>
+        <li><a>Discover</a></li>
+      </ul>
+    </div>
+    <!-- <div class="hero-content">
         <img src="https://republic-congo.com/wp-content/uploads/2022/06/brazzaville-1.jpg" alt="hero-image">
         <h1>Welcome to Our Chamber of Commerce</h1>
         <p>
@@ -65,85 +51,80 @@
         </p>
         <a class="cta-button">Join the Chamber</a>
       </div> -->
-    </header>
-    <main>
-      <div class="hero-content">
-        <img src="https://republic-congo.com/wp-content/uploads/2022/06/brazzaville-1.jpg" alt="hero-image" loading="lazy">
-        <h1>Welcome to Our Chamber of Commerce</h1>
-        <p>
-          Supporting local businesses, fostering community growth, and creating
-          opportunities for all.
+  </header>
+  <main>
+    <div class="hero-content">
+      <img src="https://republic-congo.com/wp-content/uploads/2022/06/brazzaville-1.jpg" alt="hero-image"
+        loading="lazy">
+      <h1>Welcome to Our Chamber of Commerce</h1>
+      <p>
+        Supporting local businesses, fostering community growth, and creating
+        opportunities for all.
+      </p>
+      <a class="cta-button">Join the Chamber</a>
+    </div>
+    <div class="tr">
+      <h2>Brazzaville 3-day weather forecast</h2>
+      <section class="weather"></section>
+    </div>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <article class="event">
+        <h3>Business Networking Breakfast</h3>
+        <p class="date">📅 December 5, 2025</p>
+        <p class="time">⏰ 8:00 AM – 10:00 AM</p>
+        <p class="location">📍 Chamber Conference Hall</p>
+        <p class="description">
+          Join local entrepreneurs and business leaders for a morning of
+          networking, collaboration, and fresh ideas. Coffee and breakfast
+          will be provided.
         </p>
-        <a class="cta-button">Join the Chamber</a>
-      </div>
-      <div class="tr">
-        <h2>Brazzaville 3-day weather forecast</h2>
-        <section class="weather"></section>
-      </div>
-      <section id="events">
-        <h2>Upcoming Events</h2>
-        <article class="event">
-          <h3>Business Networking Breakfast</h3>
-          <p class="date">📅 December 5, 2025</p>
-          <p class="time">⏰ 8:00 AM – 10:00 AM</p>
-          <p class="location">📍 Chamber Conference Hall</p>
-          <p class="description">
-            Join local entrepreneurs and business leaders for a morning of
-            networking, collaboration, and fresh ideas. Coffee and breakfast
-            will be provided.
-          </p>
-          <a href="join.html" class="cta">Register Now</a>
-        </article>
+        <a href="join.html" class="cta">Register Now</a>
+      </article>
 
-        <article class="event">
-          <h3>Holiday Market & Expo</h3>
+      <article class="event">
+        <h3>Holiday Market & Expo</h3>
 
-          <p class="date">📅 December 12, 2025</p>
-          <p class="time">⏰ 11:00 AM – 6:00 PM</p>
-          <p class="location">📍 City Center Plaza</p>
-          <p class="description">
-            Celebrate the season with local vendors, artisans, and chamber
-            members. Discover unique gifts, enjoy live music, and support
-            community businesses.
-          </p>
-          <a href="join.html" class="cta">Learn More</a>
-        </article>
-      </section>
-      <div class="dr">
-        <h2>Our member</h2>
-
-        <div class="spolight"></div>
-      </div>
-    </main>
-    <footer>
-      <div class="before-last">
-        <p>Medina Chamber of Commerce</p>
-        <p>35 Mandingou-kayes street, Moutabala</p>
-        <p>info@medina.cg</p>
-        <p>(+242) 06 913 12 08</p>
-      </div>
-      <span class="foot">
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img src="images/facebook.svg" alt="facebook"
-        ></a>
-        <a href="https://github.com/dashboard" target="_blank"
-          ><img src="images/github.svg" alt="github"
-        ></a>
-        <a href="https://x.com/" target="_blank"
-          ><img src="images/twitter-x.svg" alt="x"
-        ></a>
-        <a href="https://www.linkedin.com/in/m%C3%A9dinamb/" target="_blank"
-          ><img src="images/linkedin.svg" alt="linkedin"
-        ></a>
-      </span>
-      <div class="last">
-        <p>WDD231 Class Project</p>
-        <p>Medina MBEDI</p>
-        <p>
-          &copy; 2025 Medina Chamber of Commerce &#x2022; Brazzaville, Congo
+        <p class="date">📅 December 12, 2025</p>
+        <p class="time">⏰ 11:00 AM – 6:00 PM</p>
+        <p class="location">📍 City Center Plaza</p>
+        <p class="description">
+          Celebrate the season with local vendors, artisans, and chamber
+          members. Discover unique gifts, enjoy live music, and support
+          community businesses.
         </p>
-        <p class="current-time"></p>
-      </div>
-    </footer>
-  </body>
+        <a href="join.html" class="cta">Learn More</a>
+      </article>
+    </section>
+    <div class="dr">
+      <h2>Our member</h2>
+
+      <div class="spolight"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="before-last">
+      <p>Medina Chamber of Commerce</p>
+      <p>35 Mandingou-kayes street, Moutabala</p>
+      <p>info@medina.cg</p>
+      <p>(+242) 06 913 12 08</p>
+    </div>
+    <span class="foot">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
+      <a href="https://github.com/dashboard" target="_blank"><img src="images/github.svg" alt="github"></a>
+      <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="x"></a>
+      <a href="https://www.linkedin.com/in/m%C3%A9dinamb/" target="_blank"><img src="images/linkedin.svg"
+          alt="linkedin"></a>
+    </span>
+    <div class="last">
+      <p>WDD231 Class Project</p>
+      <p>Medina MBEDI</p>
+      <p>
+        &copy; 2025 Medina Chamber of Commerce &#x2022; Brazzaville, Congo
+      </p>
+      <p class="current-time"></p>
+    </div>
+  </footer>
+</body>
+
 </html>
