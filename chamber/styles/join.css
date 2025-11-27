@@ -28,6 +28,9 @@ input{
     gap:10px;      
     /* border:1px solid black */
 }
+.membership-cards h1{
+    text-align: center;
+}
 
 .flex-card{
     display: flex;

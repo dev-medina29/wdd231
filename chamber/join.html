@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is the join page of our final projet ">
+  <meta name="description"
+    content="Apply to join the Medina Chamber of Commerce — submit your organization's details to access networking, training, advertising opportunities, and member benefits.">
   <meta name="author" content="Medina MBEDI">
   <meta property="og:title" content="Join page">
   <meta property="og:description"
@@ -12,16 +13,32 @@
   <meta property="og:url" content="https://dev-medina29.github.io/wdd231/chamber/join.html">
   <meta property="og:image" content="https://dev-medina29.github.io/wdd231/chamber/new-favicon.ico">
   <link rel="icon" href="new-favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/join.css" />
   <link rel="stylesheet" href="styles/directory.css">
   <script src="scripts/join.js" defer></script>
   <title>Join page</title>
 </head>
-<header>
-  <nav><img src="images/house-door.svg" alt="logo" width="512" height="512">
-    <span>Medina Chamber of Commerce </span>
-    <div class="navigation">
+
+<body>
+  <header>
+    <nav><img src="images/house-door.svg" alt="logo" width="512" height="512">
+      <span>Medina Chamber of Commerce </span>
+      <div class="navigation">
+        <ul>
+          <li><a href="https://dev-medina29.github.io/wdd231/chamber/index.html">Home</a></li>
+          <li><a href="https://dev-medina29.github.io/wdd231/chamber/directory.html">Directory</a></li>
+          <li><a href="https://dev-medina29.github.io/wdd231/chamber/join.html">Join</a></li>
+          <li><a>Discover</a></li>
+        </ul>
+      </div>
+      <img class=" Simage" src="images/contrast-svgrepo-com.svg" alt="image2">
+      <button class="hamburger" id="ham"></button>
+    </nav>
+    <div class="navigation2">
       <ul>
         <li><a href="https://dev-medina29.github.io/wdd231/chamber/index.html">Home</a></li>
         <li><a href="https://dev-medina29.github.io/wdd231/chamber/directory.html">Directory</a></li>
@@ -29,194 +46,185 @@
         <li><a>Discover</a></li>
       </ul>
     </div>
-    <img class=" Simage" src="images/contrast-svgrepo-com.svg" alt="image2">
-    <button class="hamburger" id="ham"></button>
-  </nav>
-  <div class="navigation2">
-    <ul>
-      <li><a href="https://dev-medina29.github.io/wdd231/chamber/index.html">Home</a></li>
-      <li><a href="https://dev-medina29.github.io/wdd231/chamber/directory.html">Directory</a></li>
-      <li><a href="https://dev-medina29.github.io/wdd231/chamber/join.html">Join</a></li>
-      <li><a>Discover</a></li>
-    </ul>
-  </div>
-</header>
+  </header>
 
-<main>
-  <section class="flex-card">
-    <section class="form-section">
-      <h2>Membership Application form</h2>
-      <form method="get" action="thankyou.html">
+  <main>
+    <section class="flex-card">
+      <section class="form-section">
+        <h1>Membership Application form</h1>
 
-        <!-- First Name -->
-        <label>
-          First Name:<br>
-          <input type="text" name="firstName" title="First Name" autocomplete="given-name" required><br>
-        </label>
+        <form method="get" action="thankyou.html">
 
-        <!-- Last Name -->
-        <label>
-          Last Name:<br>
-          <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required><br>
-        </label>
+          <!-- First Name -->
+          <label>
+            First Name:<br>
+            <input type="text" name="firstName" title="First Name" autocomplete="given-name" required><br>
+          </label>
 
-        <!-- Organizational Title -->
-        <label>
-          Organizational Title:<br>
-          <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
-            pattern="[A-Za-z\\-\\s]{7,}"><br>
-        </label>
+          <!-- Last Name -->
+          <label>
+            Last Name:<br>
+            <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required><br>
+          </label>
 
-        <!-- Email -->
-        <label>
-          Email:<br>
-          <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@email.com"
-            required><br>
-        </label>
+          <!-- Organizational Title -->
+          <label>
+            Organizational Title:<br>
+            <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+              pattern="[A-Za-z\\-\\s]{7,}"><br>
+          </label>
 
-        <!-- Mobile Phone -->
-        <label>
-          Mobile Phone:<br>
-          <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required><br>
-        </label>
+          <!-- Email -->
+          <label>
+            Email:<br>
+            <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@email.com"
+              required><br>
+          </label>
 
-        <!-- Organization Name -->
-        <label>
-          Organization Name:<br>
-          <input type="text" name="organization" title="Organization" autocomplete="organization" required><br>
-        </label>
+          <!-- Mobile Phone -->
+          <label>
+            Mobile Phone:<br>
+            <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required><br>
+          </label>
 
-        <!-- Membership Level -->
-        <label>
-          Membership Level:<br>
-          <select name="membership" required>
-            <option value="np">NP Membership (Non-Profit)</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select><br>
-        </label>
+          <!-- Organization Name -->
+          <label>
+            Organization Name:<br>
+            <input type="text" name="organization" title="Organization" autocomplete="organization" required><br>
+          </label>
 
-        <!-- Description -->
-        <label>
-          Organization Description:<br>
-          <textarea name="description" title="Organization Description"></textarea><br>
-        </label>
+          <!-- Membership Level -->
+          <label>
+            Membership Level:<br>
+            <select name="membership" required>
+              <option value="">Please select a membership level</option>
+              <option value="np">NP Membership (Non-Profit)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select><br>
+          </label>
 
-        <!-- Timestamp -->
-        <input type="hidden" name="timestamp" id="timestamp">
+          <!-- Description -->
+          <label>
+            Organization Description:<br>
+            <textarea name="description" title="Organization Description"></textarea><br>
+          </label>
 
-        <!-- Submit -->
-        <button type="submit">Submit Application</button><br>
-      </form>
+          <!-- Timestamp -->
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <!-- Submit -->
+          <button type="submit">Submit Application</button><br>
+        </form>
+      </section>
+
+      <!-- Membership Cards -->
+      <aside class="membership-cards">
+        <h1>Membership levels</h1>
+        <div class="Card">
+          <h3>NP Membership</h3>
+          <p class="cost">Free</p>
+          <button id="Op1">Learn More</button>
+        </div>
+        <div class="Card">
+          <h3>Bronze Membership</h3>
+          <p class="cost">$99/year</p>
+          <button id="Op2">Learn More</button>
+        </div>
+        <div class="Card">
+          <h3>Silver Membership</h3>
+          <p class="cost">$199/year</p>
+          <button id="Op3">Learn More</button>
+        </div>
+        <div class="Card">
+          <h3>Gold Membership</h3>
+          <p class="cost">$299/year</p>
+          <button id="Op4">Learn More</button>
+        </div>
+      </aside>
     </section>
 
-    <!-- Membership Cards -->
-    <aside class="membership-cards">
-      <h2>Membership levels</h2>
-      <div class="Card">
-        <h3>NP Membership</h3>
-        <p class="cost">Free</p>
-        <button id="Op1">Learn More</button>
-      </div>
-      <div class="Card">
-        <h3>Bronze Membership</h3>
-        <p class="cost">$99/year</p>
-        <button id="Op2">Learn More</button>
-      </div>
-      <div class="Card">
-        <h3>Silver Membership</h3>
-        <p class="cost">$199/year</p>
-        <button id="Op3">Learn More</button>
-      </div>
-      <div class="Card">
-        <h3>Gold Membership</h3>
-        <p class="cost">$299/year</p>
-        <button id="Op4">Learn More</button>
-      </div>
-    </aside>
-  </section>
 
+    <!-- Modals -->
+    <dialog id="npModal">
+      <h2>NP Membership - Free</h2>
+      <p><strong>Perfect for Non-Profit Organizations</strong></p>
+      <ul>
+        <li>Access to community events and networking</li>
+        <li>Member directory listing</li>
+        <li>Monthly newsletters and updates</li>
+        <li>Networking opportunities with local businesses</li>
+      </ul>
+      <button id="close1">Close</button>
+    </dialog>
 
-  <!-- Modals -->
-  <dialog id="npModal">
-    <h2>NP Membership - Free</h2>
-    <p><strong>Perfect for Non-Profit Organizations</strong></p>
-    <ul>
-      <li>Access to community events and networking</li>
-      <li>Member directory listing</li>
-      <li>Monthly newsletters and updates</li>
-      <li>Networking opportunities with local businesses</li>
-    </ul>
-    <button id="close1">Close</button>
-  </dialog>
+    <dialog id="bronzeModal">
+      <h2>Bronze Membership - $99/year</h2>
+      <p><strong>Great for Small Businesses</strong></p>
+      <ul>
+        <li>Basic website advertising</li>
+        <li>10% discount on event registrations</li>
+        <li>Monthly training and workshops</li>
+        <li>Member directory listing with business details</li>
+        <li>Priority networking events</li>
+      </ul>
+      <button id="close2">Close</button>
+    </dialog>
 
-  <dialog id="bronzeModal">
-    <h2>Bronze Membership - $99/year</h2>
-    <p><strong>Great for Small Businesses</strong></p>
-    <ul>
-      <li>Basic website advertising</li>
-      <li>10% discount on event registrations</li>
-      <li>Monthly training and workshops</li>
-      <li>Member directory listing with business details</li>
-      <li>Priority networking events</li>
-    </ul>
-    <button id="close2">Close</button>
-  </dialog>
+    <dialog id="silverModal">
+      <h2>Silver Membership - $199/year</h2>
+      <p><strong>Ideal for Growing Businesses</strong></p>
+      <ul>
+        <li>Spotlight position on home page (monthly rotation)</li>
+        <li>20% discount on all events and training</li>
+        <li>Advanced business training programs</li>
+        <li>Featured profile on member directory</li>
+        <li>Exclusive networking dinners (quarterly)</li>
+        <li>Social media promotion</li>
+      </ul>
+      <button id="close3">Close</button>
+    </dialog>
 
-  <dialog id="silverModal">
-    <h2>Silver Membership - $199/year</h2>
-    <p><strong>Ideal for Growing Businesses</strong></p>
-    <ul>
-      <li>Spotlight position on home page (monthly rotation)</li>
-      <li>20% discount on all events and training</li>
-      <li>Advanced business training programs</li>
-      <li>Featured profile on member directory</li>
-      <li>Exclusive networking dinners (quarterly)</li>
-      <li>Social media promotion</li>
-    </ul>
-    <button id="close3">Close</button>
-  </dialog>
-
-  <dialog id="goldModal">
-    <h2>Gold Membership - $299/year</h2>
-    <p><strong>Premium for Established Businesses</strong></p>
-    <ul>
-      <li>Premium advertising with homepage spotlight (weekly)</li>
-      <li>25% discount on all events, training, and services</li>
-      <li>Executive training and leadership programs</li>
-      <li>Premium directory listing with enhanced visibility</li>
-      <li>Monthly exclusive VIP networking events</li>
-      <li>Priority social media and press coverage</li>
-      <li>One-on-one business consultation session</li>
-      <li>Ribbon cutting ceremony for new business launch</li>
-    </ul>
-    <button id="close4">Close</button>
-  </dialog>
-</main>
-<footer>
-  <div class="before-last">
-    <p>Medina Chamber of Commerce</p>
-    <p>35 Mandingou-kayes street, Moutabala</p>
-    <p>info@medina.cg</p>
-    <p>(+242) 06 913 12 08</p>
-  </div>
-  <span class="foot">
-    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
-    <a href="https://github.com/dashboard" target="_blank"><img src="images/github.svg" alt="github"></a>
-    <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="x"></a>
-    <a href="https://www.linkedin.com/in/m%C3%A9dinamb/" target="_blank"><img src="images/linkedin.svg"
-        alt="linkedin"></a>
-  </span>
-  <div class="last">
-    <p>WDD231 Class Project</p>
-    <p>Medina MBEDI</p>
-    <p>
-      &copy; 2025 Medina Chamber of Commerce &#x2022; Brazzaville, Congo
-    </p>
-    <p class="current-time"></p>
-  </div>
-</footer>
+    <dialog id="goldModal">
+      <h2>Gold Membership - $299/year</h2>
+      <p><strong>Premium for Established Businesses</strong></p>
+      <ul>
+        <li>Premium advertising with homepage spotlight (weekly)</li>
+        <li>25% discount on all events, training, and services</li>
+        <li>Executive training and leadership programs</li>
+        <li>Premium directory listing with enhanced visibility</li>
+        <li>Monthly exclusive VIP networking events</li>
+        <li>Priority social media and press coverage</li>
+        <li>One-on-one business consultation session</li>
+        <li>Ribbon cutting ceremony for new business launch</li>
+      </ul>
+      <button id="close4">Close</button>
+    </dialog>
+  </main>
+  <footer>
+    <div class="before-last">
+      <p>Medina Chamber of Commerce</p>
+      <p>35 Mandingou-kayes street, Moutabala</p>
+      <p>info@medina.cg</p>
+      <p>(+242) 06 913 12 08</p>
+    </div>
+    <span class="foot">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
+      <a href="https://github.com/dashboard" target="_blank"><img src="images/github.svg" alt="github"></a>
+      <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="x"></a>
+      <a href="https://www.linkedin.com/in/m%C3%A9dinamb/" target="_blank"><img src="images/linkedin.svg"
+          alt="linkedin"></a>
+    </span>
+    <div class="last">
+      <p>WDD231 Class Project</p>
+      <p>Medina MBEDI</p>
+      <p>
+        &copy; 2025 Medina Chamber of Commerce &#x2022; Brazzaville, Congo
+      </p>
+      <p class="current-time"></p>
+    </div>
+  </footer>
 </body>
 
 </html>

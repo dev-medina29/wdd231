@@ -68,7 +68,20 @@ CloseButton4.addEventListener("click",()=>{
 
 
 const form = document.querySelector('form');
-form.addEventListener('submit', () => {
-  const now = new Date();
-  document.querySelector('#timestamp').value = now.toISOString();
-});
+if (form) {
+  form.addEventListener('submit', (e) => {
+    // Validate membership select has a real value (placeholder has empty value)
+    const membershipValue = form.elements['membership'] ? form.elements['membership'].value : '';
+    if (!membershipValue) {
+      e.preventDefault();
+      alert('Please choose a membership level before submitting the form.');
+      if (form.elements['membership']) form.elements['membership'].focus();
+      return;
+    }
+
+    // Set timestamp at submit time in ISO format
+    const now = new Date();
+    const tsField = document.querySelector('#timestamp');
+    if (tsField) tsField.value = now.toISOString();
+  });
+}
