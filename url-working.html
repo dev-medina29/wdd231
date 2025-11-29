@@ -1,0 +1,64 @@
+<form method="get" action="dataToGet.html">
+
+    <!-- First Name -->
+    <label>
+        First Name:<br>
+        <input type="text" name="firstName" title="First Name" autocomplete="given-name" required><br>
+    </label>
+
+    <!-- Last Name -->
+    <label>
+        Last Name:<br>
+        <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required><br>
+    </label>
+
+    <!-- Organizational Title -->
+    <label>
+        Organizational Title:<br>
+        <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+            pattern="[A-Za-z\\-\\s]{7,}"><br>
+    </label>
+
+    <!-- Email -->
+    <label>
+        Email:<br>
+        <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@email.com"
+            required><br>
+    </label>
+
+    <!-- Mobile Phone -->
+    <label>
+        Mobile Phone:<br>
+        <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required><br>
+    </label>
+
+    <!-- Organization Name -->
+    <label>
+        Organization Name:<br>
+        <input type="text" name="organization" title="Organization" autocomplete="organization" required><br>
+    </label>
+
+    <!-- Membership Level -->
+    <label>
+        Membership Level:<br>
+        <select name="membership" required>
+            <option value="">Please select a membership level</option>
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+        </select><br>
+    </label>
+
+    <!-- Description -->
+    <label>
+        Organization Description:<br>
+        <textarea name="description" title="Organization Description"></textarea><br>
+    </label>
+
+    <!-- Timestamp -->
+    <input type="hidden" name="timestamp" id="timestamp">
+
+    <!-- Submit -->
+    <button type="submit">Submit Application</button><br>
+</form>
