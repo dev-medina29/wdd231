@@ -16,3 +16,46 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("open");
   navigation.classList.toggle("open");
 });
+
+
+// ################################################
+const cards = document.querySelector("#cards");
+const displayProphets = (prophets) => {
+  prophets.forEach((prophet) => {
+    const card = document.createElement("div");
+    const fullName = document.createElement("h2");
+    const portrait = document.createElement("img");
+    const detail=document.createElement("p");
+    const address=document.createElement("p");
+    card.setAttribute("class", "manager");
+    fullName.innerHTML = prophet.name;
+    detail.innerHTML=`${prophet.description}`;
+    address.innerHTML=prophet.address;
+    const cost =document.createElement("p");
+    cost.innerHTML=prophet.cost;
+    portrait.setAttribute("Alt", `${prophet.name}`);
+    portrait.setAttribute("src", `images/${prophet.image_url}`);
+    portrait.setAttribute("loading", "lazy");
+    portrait.setAttribute("width", "l00");
+    portrait.setAttribute("height", "l00");
+    card.appendChild(fullName);
+    card.appendChild(portrait);
+    card.appendChild(address);
+    card.appendChild(detail);
+    cards.appendChild(card);
+  });
+};
+
+// import statement
+
+import { places } from "../data/places.mjs";
+console.log(places);
+
+displayProphets(places);
+
+
+
+
+
+
+
