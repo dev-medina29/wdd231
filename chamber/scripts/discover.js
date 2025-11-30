@@ -27,7 +27,11 @@ const displayProphets = (prophets) => {
     const portrait = document.createElement("img");
     const detail=document.createElement("p");
     const address=document.createElement("p");
+    const info=document.createElement("button");
+    address.setAttribute("class","street");
+    detail.setAttribute("class","detai");
     card.setAttribute("class", "manager");
+    info.innerHTML="Learn more"
     fullName.innerHTML = prophet.name;
     detail.innerHTML=`${prophet.description}`;
     address.innerHTML=prophet.address;
@@ -36,12 +40,13 @@ const displayProphets = (prophets) => {
     portrait.setAttribute("Alt", `${prophet.name}`);
     portrait.setAttribute("src", `images/${prophet.image_url}`);
     portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "l00");
-    portrait.setAttribute("height", "l00");
+    portrait.setAttribute("width", "300");
+    portrait.setAttribute("height", "200");
     card.appendChild(fullName);
     card.appendChild(portrait);
     card.appendChild(address);
     card.appendChild(detail);
+    card.appendChild(info);
     cards.appendChild(card);
   });
 };
