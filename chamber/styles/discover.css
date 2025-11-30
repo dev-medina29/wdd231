@@ -13,6 +13,29 @@ footer p {
   background-color: rgb(209, 207, 207);
   height: auto;
 }
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#box10 {
+  background-color: rgb(95, 184, 243);
+  border: 1px solid black;
+  width: 50%;
+}
+::backdrop {
+  background: rgba(15, 15, 15, 0.5);
+}
+.intro {
+  text-align: center;
+  margin: 20px;
+}
+
 @media screen and (min-width: 1025px) {
   #cards {
     display: flex;
@@ -30,8 +53,15 @@ footer p {
   .manager button {
     width: 200px;
     letter-spacing: 1px;
-    font-weight: 30px;
+    font-weight: bolder;
     background-color: rgb(16, 145, 231);
+  }
+  .manager h1 {
+    font-size: 18px;
+  }
+  .manager img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1024px) {
@@ -58,7 +88,7 @@ footer p {
     padding-bottom: 0;
     border-radius: 10px;
   }
-  .manager h2 {
+  .manager h1 {
     grid-area: name;
     margin: 0;
     padding-top: 10px;
@@ -80,7 +110,7 @@ footer p {
     margin: 10px;
     width: auto;
     letter-spacing: 1px;
-    font-weight: 30px;
+    font-weight: bolder;
     background-color: rgb(16, 145, 231);
     grid-area: butt;
   }
@@ -143,7 +173,7 @@ footer p {
     border-radius: 10px;
   }
 
-  .manager h2 {
+  .manager h1 {
     grid-area: image;
     padding-left: 5px;
     padding-top: 10px;
@@ -170,7 +200,7 @@ footer p {
     letter-spacing: 1px;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 30px;
+    font-weight: bolder;
     background-color: rgb(16, 145, 231);
   }
   footer {
@@ -239,7 +269,7 @@ footer p {
     border-radius: 10px;
   }
 
-  .manager h2 {
+  .manager h1 {
     grid-area: image;
     padding-left: 5px;
     padding-top: 10px;
@@ -266,7 +296,7 @@ footer p {
     margin: 10px;
     width: auto;
     letter-spacing: 1px;
-    font-weight: 30px;
+    font-weight: bolder;
     background-color: rgb(16, 145, 231);
   }
 }
