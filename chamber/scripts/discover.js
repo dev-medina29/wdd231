@@ -197,3 +197,46 @@ b10.addEventListener("click", () => {
 c10.addEventListener("click", () => {
   m10.close();
 });
+// ################### Date storage #########################
+
+// Run this when the page loads
+const TimeD = document.querySelector(".last-visit");
+// window.addEventListener("load", () => {
+//   const lastVisit = localStorage.getItem("lastVisit");
+
+//   if (lastVisit) {
+//     // This means the user has visited before
+
+//     TimeD.innerHTML = `Welcome back! Your last visit was on: ${lastVisit}`;
+//   } else {
+//     // First time visitor
+//     TimeD.innerHTML = "Welcome! Let us know if you have any questions.";
+//   }
+
+//   // Store the current date/time for next time
+//   const now = new Date().toLocaleString();
+//   localStorage.setItem("lastVisit", now);
+// });
+
+window.addEventListener("load", () => {
+  const lastVisit = localStorage.getItem("lastVisit");
+  const now = Date.now();
+
+  if (lastVisit) {
+    const diffMs = now - parseInt(lastVisit, 10);
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+    if (diffMs < 1000 * 60 * 60 * 24) {
+      TimeD.textContent = "Back so soon! Awesome!";
+    } else if (diffDays === 1) {
+      TimeD.textContent = "You last visited 1 day ago.";
+    } else {
+      TimeD.textContent = `You last visited ${diffDays} days ago.`;
+    }
+  } else {
+    TimeD.textContent = "Welcome! Let us know if you have any questions.";
+  }
+
+  // Save current visit
+  localStorage.setItem("lastVisit", now);
+});

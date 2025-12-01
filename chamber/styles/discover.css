@@ -13,7 +13,19 @@ footer p {
   background-color: rgb(209, 207, 207);
   height: auto;
 }
+.marquee {
+  color: rgb(95, 189, 243);
+  animation: moveText 12s linear 2;
+}
 
+@keyframes moveText {
+  from {
+    transform: translateX(-100%); /* start off left */
+  }
+  to {
+    transform: translateX(100%); /* move fully to right */
+  }
+}
 #box1,
 #box2,
 #box3,
