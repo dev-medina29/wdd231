@@ -11,3 +11,4 @@ url.delete("firstName");
 delete Nam[1];
 console.log(Nam[1]);
 console.log(url.toString());
+// 

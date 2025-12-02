@@ -201,23 +201,6 @@ c10.addEventListener("click", () => {
 
 // Run this when the page loads
 const TimeD = document.querySelector(".last-visit");
-// window.addEventListener("load", () => {
-//   const lastVisit = localStorage.getItem("lastVisit");
-
-//   if (lastVisit) {
-//     // This means the user has visited before
-
-//     TimeD.innerHTML = `Welcome back! Your last visit was on: ${lastVisit}`;
-//   } else {
-//     // First time visitor
-//     TimeD.innerHTML = "Welcome! Let us know if you have any questions.";
-//   }
-
-//   // Store the current date/time for next time
-//   const now = new Date().toLocaleString();
-//   localStorage.setItem("lastVisit", now);
-// });
-
 window.addEventListener("load", () => {
   const lastVisit = localStorage.getItem("lastVisit");
   const now = Date.now();
