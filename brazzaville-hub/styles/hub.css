@@ -15,7 +15,26 @@
 }
 
 /* ############################################# */
-
+#image-text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  /* align-items: center; */
+}
+#image-text a {
+  /* height: 42px; */
+  font-size: 1.3rem;
+}
+#image-text img {
+  height: 42px;
+  width: auto;
+}
+#Tocenter {
+  text-align: center;
+}
+.logo:focus {
+  outline: none;
+}
 .hero-image {
   position: relative;
   text-align: center;
