@@ -35,36 +35,85 @@
         <div class="forms-grid">
             <!-- Sign Up Form -->
             <section class="form-box">
-                <h2>Sign Up</h2>
+                <h2>Sign Up or create an account</h2>
                 <form id="signup-form" action="registration.html" method="get">
                     <div>
-                        <label for="new-username">Username</label>
-                        <input type="text" id="new-username" name="new-username" required>
+                        <label>
+                            Last Name *<br>
+                            <input type="text" id="lastName" name="lastName" title="Last Name"
+                                autocomplete="family-name" required><br>
+                        </label>
                     </div>
                     <div>
-                        <label for="new-email">Email</label>
-                        <input type="email" id="new-email" name="new-email" required>
+                        <label>
+                            First Name *<br>
+                            <input type="text" name="firstName" id="firstName" title="First Name"
+                                autocomplete="given-name" required><br>
+                        </label>
                     </div>
                     <div>
-                        <label for="new-password">Password</label>
-                        <input type="password" id="new-password" name="new-password" required>
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="repeat your password"
-                            required>
-                    </div>
-                    <button type="submit">Create Account</button>
+
+                        <div>
+                            <label for="new-username">Username</label>
+                            <input type="text" id="new-username" name="new-username" required>
+                        </div>
+                        <div>
+                            <label for="new-email">Email *</label>
+                            <input type="email" id="new-email" name="new-email" required>
+                        </div>
+                        <div>
+                            <label for="new-password">Password *</label>
+                            <input type="password" id="new-password" name="new-password" required>
+                        </div>
+                        <div>
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" name="password" placeholder="repeat your password"
+                                required>
+                        </div>
+
+
+                        <div><label>
+                                Job Title *<br>
+                                <input type="text" name="orgTitle" id="orgTitle" title="Organizational Title"
+                                    autocomplete="organization-title" required><br>
+                            </label></div>
+
+
+                        <div><label>
+                                Mobile Phone *<br>
+                                <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required><br>
+                            </label></div>
+
+
+                        <div><label>
+                                Membership category *<br>
+                                <select name="membership" id="memb" required>
+                                    <option value="">Please select a membership category please</option>
+                                    <option value="Partner">Partner</option>
+                                    <option value="Instructor">Instructor</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Donator">Donator</option>
+                                </select><br>
+                            </label></div>
+
+
+
+                        <div><label>
+                                Personal Description<br>
+                                <textarea name="description" title="Organization Description" rows="4"></textarea><br>
+                            </label></div>
+
+                        <button type="submit">Create Account</button>
                 </form>
             </section>
 
             <!-- Log In Form -->
             <section class="form-box">
                 <h2>Log In</h2>
-                <form id="login-form" action="registration.html" method="get">
+                <form id="login-form" action="logIn.html" method="get">
                     <div>
-                        <label for="login-username">Username or Email</label>
-                        <input type="text" id="login-username" name="login-username" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div>
                         <label for="login-password">Password</label>
