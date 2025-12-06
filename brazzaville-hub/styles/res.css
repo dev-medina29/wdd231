@@ -1,0 +1,10 @@
+#ressource {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  color: var(--accent-teal);
+  background-color: var(--neutral-900);
+  transition: background-color 0.9s ease;
+}
+#ressource:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}

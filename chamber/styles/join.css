@@ -1,113 +1,115 @@
-form{
-    width: auto;
-    height: auto;
-    /* margin-left: 20px; */
-    background-color:rgb(173, 173, 173);
-    padding:10px;
-    letter-spacing: 1px;
-    margin-top:25px;
-    color: #000;
+form {
+  width: auto;
+  height: auto;
+  /* margin-left: 20px; */
+  background-color: rgb(173, 173, 173);
+  padding: 10px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  color: #000;
 }
-label{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin-top:20px;
-    color: #000;
+label {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  color: #000;
 }
-input{
-    margin:10px;
-    margin-left: 0;
-    
+input {
+  margin: 10px;
+  margin-left: 0;
 }
-.membership-cards{
-    width: auto;
-    height: auto;
-    /* border: 2px solid black; */
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap:10px;      
-    /* border:1px solid black */
+.membership-cards {
+  width: auto;
+  height: auto;
+  /* border: 2px solid black; */
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border:1px solid black */
 }
-.membership-cards h1{
-    text-align: center;
+.membership-cards h1 {
+  text-align: center;
 }
 
-.flex-card{
-    display: flex;
-    justify-content: center;
-    gap:25px;
+.flex-card {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
-.Card{
+.Card {
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px 3px;
+  width: 90%;
+  padding: 0;
+  padding-bottom: 10px;
+  animation-name: firstAnim;
+  animation-duration: 4s;
+  margin: 0;
+  border: 1px solid black;
+  position: relative;
+  font-size: smaller;
+  color: #000;
+}
+
+.Card h3 {
+  margin-bottom: 2px;
+}
+@keyframes firstAnim {
+  0% {
     background-color: rgb(173, 173, 173);
-    border-radius: 10px 3px;
-    width: 90%;
-    padding:0;
-    padding-bottom: 10px;
-    animation-name: firstAnim;
-    animation-duration: 4s;
-    margin:0;
-    border:1px solid black;
-    position: relative;
-    font-size: smaller;
-    color: #000;
+    bottom: 0;
+    top: 100px;
+  }
+  50% {
+    background-color: rgb(207, 206, 206);
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
 }
-
-.Card h3{
-    margin-bottom: 2px;
+button {
+  margin-top: 15px;
+  transition: background-color 0.5s ease;
 }
-@keyframes firstAnim{
-    0%{
-        background-color: rgb(173, 173, 173); 
-        bottom: 0;
-        top:100px;
-    }
-    50%{
-        background-color: rgb(207, 206, 206);
-    }
-    100%{
-        left: 0;
-        top: 0;
-    }
+textarea {
+  margin-top: 12px;
+  width: 80%;
+  height: 60%;
 }
-button{
-    margin-top: 15px;
-    transition: background-color 0.5s ease;
+select {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-textarea{
-    margin-top: 12px;
-    width: 80%;
-    height: 60%;
+#ham {
+  margin-top: 0;
 }
-select{
-    margin-top:10px;
-    margin-bottom: 20px;
+.membership-cards button {
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
 }
-#ham{
-    margin-top: 0;
+.membership-cards button:hover {
+  background-color: rgb(10, 176, 253);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.membership-cards button{
-    border-radius: 30px;
-    background-color: rgb(16, 145, 231);
-    padding:5px;
-    border: none;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
+.Card .cost {
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#0050c7;
+  margin: 10px 0;
 }
-.membership-cards button:hover{
-    background-color: rgb(30, 170, 210);
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.navigation a {
+  text-decoration: none;
 }
-.Card .cost{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #003d99;
-    margin: 10px 0;
-}
-.navigation a{
-    text-decoration: none;
+header a {
+  color: black;
 }
