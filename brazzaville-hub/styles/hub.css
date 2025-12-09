@@ -1,7 +1,7 @@
 :root {
   /* Brand and accent colors */
   --primary: #0b5fff; /* Indigo Blue — headings, main CTAs */
-  --accent: #0066cc; /* Blue — navigation background, subtle accents */
+  --accent: #001f38; /* Blue — navigation background, subtle accents */
   --accent-teal: #00bfa6; /* Teal — interactive elements, link highlights, success messages */
 
   /* Neutral and background colors */
@@ -12,6 +12,32 @@
 
 * {
   box-sizing: border-box;
+}
+
+.btn-dialog {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  justify-self: flex-end;
+}
+.OpenDialog a:focus {
+  outline: none;
+}
+.eventGood {
+  border: 2px solid rgb(16, 145, 231);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: var(--bg);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ############################################# */
@@ -206,20 +232,10 @@ footer {
   margin: 2rem auto;
   padding: 0 1rem;
 }
-@media (max-width: 600px) {
-  .lede {
-    max-width: 100%;
-  }
-  nav {
-    padding: 0;
-  }
-  nav .nav {
-    display: none;
-  }
-}
+
 /* accessible focus style */
 a:focus {
-  outline: 3px solid #ffbf47;
+  outline: 1px solid #000000;
   outline-offset: 2px;
 }
 code {
@@ -252,11 +268,195 @@ button {
   padding: 0.6rem;
   border: none;
   border-radius: 4px;
-  background: #0078d7;
+  background: var(--accent);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
 button:hover {
   background: #005a9e;
+}
+
+/* Hamburger menu toggle */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+nav .nav.mobile-open {
+  display: flex;
+}
+
+/* Media queries */
+@media (min-width: 321px) and (max-width: 600px) {
+  .hero-image .lede {
+    width: 100%;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 75%;
+    flex-wrap: wrap;
+  }
+  nav {
+    padding: 0;
+  }
+
+  nav .nav {
+    display: none;
+    flex-direction: column;
+    /* keep the nav in the document flow so it pushes content down */
+    position: static;
+    background: var(--accent);
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+  nav .nav li {
+    padding: 0.5rem 1rem;
+  }
+  .hamburger {
+    display: flex;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Extra small devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .hero-image .lede {
+    width: 100%;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 65%;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  /* .hero-image.space-up {
+    margin-top: 126px;
+  } */
+  .hero-image h1 {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 5px;
+    top: 25%;
+  }
+  #image-text {
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #image-text a {
+    font-size: 1rem;
+  }
+  input {
+    padding: 0.5rem;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 70%;
+  }
+  #memb {
+    width: 70%;
+  }
+  form-box {
+    width: auto;
+  }
+  form {
+    width: auto;
+  }
+  form div {
+    width: auto;
+  }
+
+  header {
+    padding: 0.4rem 0.5rem;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  nav .logo {
+    font-size: 0.9rem;
+  }
+  nav .nav {
+    top: 50px;
+    padding: 0.8rem 0;
+  }
+  nav .nav li {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+  .container {
+    margin: 0.8rem auto;
+    padding: 0 0.5rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .lede {
+    font-size: 0.95rem;
+  }
+  .btn-dialog {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  .eventGood {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav .nav {
+    display: none;
+    flex-direction: column;
+    /* keep the nav in the document flow so it pushes content down */
+    position: static;
+    background: var(--accent);
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+  nav .nav li {
+    padding: 0.5rem 1rem;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger span {
+    width: 18px;
+    height: 3px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }

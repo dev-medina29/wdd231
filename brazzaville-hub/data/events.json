@@ -25,6 +25,114 @@
       "location": "Tech Hub Room B",
       "url": "https://example.com/events/3",
       "description": "Bring your project and get feedback from mentors and peers."
+    },
+    {
+      "id": "4",
+      "title": "JavaScript Deep Dive — Async & Promises",
+      "start": "2026-01-09T18:00:00+01:00",
+      "end": "2026-01-09T20:00:00+01:00",
+      "location": "Brazzaville Tech Hub",
+      "url": "https://example.com/events/4",
+      "description": "Explore asynchronous programming patterns in JavaScript with hands-on coding exercises."
+    },
+    {
+      "id": "5",
+      "title": "UI/UX Design Principles Workshop",
+      "start": "2026-01-16T17:00:00+01:00",
+      "end": "2026-01-16T19:00:00+01:00",
+      "location": "Online (Zoom)",
+      "url": "https://example.com/events/5",
+      "description": "Learn the fundamentals of user-centered design and prototyping tools."
+    },
+    {
+      "id": "6",
+      "title": "Python for Data Science — Study Group",
+      "start": "2026-01-23T18:30:00+01:00",
+      "end": "2026-01-23T20:30:00+01:00",
+      "location": "Brazzaville Community Center",
+      "url": "https://example.com/events/6",
+      "description": "Introduction to data analysis with Python libraries like Pandas and Matplotlib."
+    },
+    {
+      "id": "7",
+      "title": "Tech Career Panel: Breaking into IT",
+      "start": "2026-01-30T16:00:00+01:00",
+      "end": "2026-01-30T18:00:00+01:00",
+      "location": "Tech Hub Auditorium",
+      "url": "https://example.com/events/7",
+      "description": "Hear from professionals about career paths in software engineering and IT support."
+    },
+    {
+      "id": "8",
+      "title": "Mobile App Development with Flutter",
+      "start": "2026-02-06T17:30:00+01:00",
+      "end": "2026-02-06T19:30:00+01:00",
+      "location": "Online (Zoom)",
+      "url": "https://example.com/events/8",
+      "description": "Build your first cross-platform mobile app using Flutter and Dart."
+    },
+    {
+      "id": "9",
+      "title": "Cybersecurity Basics — Protecting Your Data",
+      "start": "2026-02-13T18:00:00+01:00",
+      "end": "2026-02-13T20:00:00+01:00",
+      "location": "Brazzaville Tech Hub Room A",
+      "url": "https://example.com/events/9",
+      "description": "Learn about common cyber threats and how to safeguard your personal information."
+    },
+    {
+      "id": "10",
+      "title": "Hackathon Kickoff: Smart City Solutions",
+      "start": "2026-02-20T09:00:00+01:00",
+      "end": "2026-02-20T18:00:00+01:00",
+      "location": "Brazzaville Innovation Lab",
+      "url": "https://example.com/events/10",
+      "description": "Collaborate on projects that address urban challenges with technology-driven solutions."
+    },
+    {
+      "id": "11",
+      "title": "Intro to Git & GitHub",
+      "start": "2026-02-27T17:00:00+01:00",
+      "end": "2026-02-27T19:00:00+01:00",
+      "location": "Online (Zoom)",
+      "url": "https://example.com/events/11",
+      "description": "Learn version control basics and how to collaborate on projects using GitHub."
+    },
+    {
+      "id": "12",
+      "title": "Women in Tech Networking Night",
+      "start": "2026-03-06T18:00:00+01:00",
+      "end": "2026-03-06T20:00:00+01:00",
+      "location": "Brazzaville Community Center",
+      "url": "https://example.com/events/12",
+      "description": "Connect with women professionals and students in technology fields."
+    },
+    {
+      "id": "13",
+      "title": "Cloud Computing with AWS — Beginner Session",
+      "start": "2026-03-13T17:30:00+01:00",
+      "end": "2026-03-13T19:30:00+01:00",
+      "location": "Online (Zoom)",
+      "url": "https://example.com/events/13",
+      "description": "Get started with Amazon Web Services and learn about cloud infrastructure basics."
+    },
+    {
+      "id": "14",
+      "title": "Tech for Social Good — Panel Discussion",
+      "start": "2026-03-20T16:00:00+01:00",
+      "end": "2026-03-20T18:00:00+01:00",
+      "location": "Brazzaville Tech Hub Auditorium",
+      "url": "https://example.com/events/14",
+      "description": "Explore how technology can be leveraged to solve community and social challenges."
+    },
+    {
+      "id": "15",
+      "title": "Final Project Showcase — Student Presentations",
+      "start": "2026-03-27T15:00:00+01:00",
+      "end": "2026-03-27T18:00:00+01:00",
+      "location": "Brazzaville Innovation Lab",
+      "url": "https://example.com/events/15",
+      "description": "Students present their completed projects to peers, mentors, and community members."
     }
   ]
 }
