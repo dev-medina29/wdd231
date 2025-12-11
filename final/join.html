@@ -9,6 +9,11 @@
     <meta name="description"
         content="Join the Brazzaville Tech Learners Hub community — sign up as a member or log in to access resources and events.">
     <meta name="author" content="Medina MBEDI">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dev-medina29.github.io/wdd231/final/join.html">
@@ -18,7 +23,7 @@
     <meta property="og:image" content="https://dev-medina29.github.io/wdd231/final/images/Untitled-1.png">
     <meta property="og:image:alt" content="Join Brazzaville Tech Learners Hub">
     <meta property="og:locale" content="en_US">
-    
+
     <!-- Twitter Card -->
     <!-- <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Join Brazzaville Tech Learners Hub">
@@ -79,81 +84,86 @@
                         </label>
                     </div>
                     <div>
-
-                        <div>
-                            <label for="new-username">Username</label> <br>
-                            <input type="text" id="new-username" name="new-username" required><br>
-                        </div>
-                        <div>
-                            <label for="new-email">Email *</label><br>
-                            <input type="email" id="new-email" name="new-email" required><br>
-                        </div>
-                        <div>
-                            <label for="new-password">Password *</label><br>
-                            <input type="password" id="new-password" name="new-password" required><br>
-                        </div>
-                        <div>
-                            <label for="password">Password *</label><br>
-                            <input type="password" id="password" name="password" placeholder="repeat your password"
-                                required>
-                        </div><br>
-
-
-                        <div><label>
-                                Job Title *<br>
-                                <input type="text" name="orgTitle" id="orgTitle" title="Organizational Title"
-                                    autocomplete="organization-title" required><br>
-                            </label></div>
-
-
-                        <div><label>
-                                Mobile Phone *<br>
-                                <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required><br>
-                            </label></div>
-
-
-                        <div><label>
-                                Membership category *<br>
-                                <select name="membership" id="memb" required>
-                                    <option value="">Please select a membership category please</option>
-                                    <option value="Partner">Partner</option>
-                                    <option value="Instructor">Instructor</option>
-                                    <option value="Student">Student</option>
-                                    <option value="Donator">Donator</option>
-                                </select><br>
-                            </label></div>
-
-
-
-                        <div><label>
-                                Personal Description<br>
-                                <textarea name="description" title="Organization Description" rows="4"></textarea><br>
-                            </label></div>
-
-                        <button type="submit">Create Account</button>
-                </form>
-            </section>
-
-            <!-- Log In Form -->
-            <section class="form-box">
-                <h2>Log In</h2>
-                <form id="login-form" action="logIn.html" method="get">
-                    <div>
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" required><br>
+                        <label for="new-username">Username</label> <br>
+                        <input type="text" id="new-username" name="new-username" required><br>
                     </div>
                     <div>
-                        <label for="login-password">Password</label><br>
-                        <input type="password" id="login-password" name="login-password" required>
+                        <label for="new-email">Email *</label><br>
+                        <input type="email" id="new-email" name="new-email" required><br>
                     </div>
-                    <button type="submit">Log In</button>
+                    <div>
+                        <label for="new-password">Password *</label><br>
+                        <input type="password" id="new-password" name="new-password" required><br>
+                    </div>
+                    <div>
+                        <label for="password">Password *</label><br>
+                        <input type="password" id="password" name="password" placeholder="repeat your password"
+                            required>
+                    </div><br>
+
+
+                    <div>
+                        <label>
+                            Job Title *<br>
+                            <input type="text" name="orgTitle" id="orgTitle" title="Organizational Title"
+                                autocomplete="organization-title" required><br>
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <label>
+                            Mobile Phone *<br>
+                            <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required><br>
+                        </label>
+                    </div>
+
+
+                    <div><label>
+                            Membership category *<br>
+                            <select name="membership" id="memb" required>
+                                <option value="">Please select a membership category please</option>
+                                <option value="Partner">Partner</option>
+                                <option value="Instructor">Instructor</option>
+                                <option value="Student">Student</option>
+                                <option value="Donator">Donator</option>
+                            </select><br>
+                        </label>
+                    </div>
+
+
+
+                    <div><label>
+                            Personal Description<br>
+                            <textarea name="description" title="Organization Description" rows="4"></textarea><br>
+                        </label>
+                    </div>
+                    <button type="submit">Create Account</button>
                 </form>
             </section>
         </div>
+
+        <!-- Log In Form -->
+        <section class="form-box">
+            <h2>Log In</h2>
+            <form id="login-form" action="logIn.html" method="get">
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div>
+                    <label for="login-password">Password</label><br>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+        </section>
+
     </main>
 
     <footer>
         <p>Brazzaville Tech Learners Hub - &copy;2025 - All rigths reserved</p>
+        <a href="https://www.loom.com/share/07029f65ff7849628622084d2b14fcbe">Video</a>
         <p><a href="mailto:info@medina.cg">info@medina.cg</a> • (+242) 06 913 12 08</p>
     </footer>
 </body>
